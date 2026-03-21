@@ -122,6 +122,23 @@ React, Express, Prisma, MySQL, Docker, Swagger, Playwright を用いて構築し
 - Transaction-based ordering and stock consistency
 - Swagger API docs, Docker Compose, CI, Playwright smoke test
 
+役割・貢献 / My Role and Contribution
+
+個人開発として、要件整理、画面設計、API設計、DB設計、実装、テスト、README整理まで一貫して担当しました。AIツールは、初期設計案の比較、API仕様の叩き台作成、テストケースの初期草案、ドキュメント整理の高速化に活用しました。
+
+As a solo project, I handled the full lifecycle end-to-end: requirements clarification, UI design, API design, database design, implementation, testing, and README documentation. I used AI tools mainly to speed up early design comparison, draft API specifications, propose initial test cases, and improve documentation efficiency.
+
+プロセスと意図 / Process and Intent
+
+最初に「在庫整合性」「権限制御」「管理画面と購買導線の分離」を主要論点として定義し、そこから設計を進めました。AIを活用して実装速度を高めつつも、在庫更新や注文処理はトランザクションを意識し、Swagger、Playwright、CIを使って検証可能な形を優先しました。意図は、短時間で形にしながらも、壊れにくい業務システムの最小単位を示すことでした。
+
+I started by defining the core concerns: stock consistency, role-based access control, and clear separation between admin workflows and customer purchase flows. While AI helped accelerate implementation, I intentionally focused on transaction-aware order handling and verification through Swagger, Playwright, and CI. The goal was to demonstrate a minimum but reliable business system, not just a quick demo.
+
+学び・改善点 / Learning and Improvements
+
+学んだのは、AIを使うほど「作る速さ」と同時に「壊れ方を先に考える視点」が重要になることです。今後は、在庫競合のケースをさらに増やしたテスト、監査ログ、運用時の異常検知などを強化したいです。
+
+My main learning was that the more AI accelerates implementation, the more important it becomes to think about failure modes and validation early. As next steps, I would strengthen concurrent inventory edge-case testing, audit logging, and operational monitoring for abnormal events.
 ---
 
 ### 2. [team-knowledge-copilot-v1]
@@ -135,6 +152,23 @@ FastAPI ベースの社内向けナレッジアシスタントです。
 - AI-assisted daily report generation
 - Knowledge workflow prototype for internal teams
 
+役割・貢献 / My Role and Contribution
+
+個人で、ユースケース設計、文書処理フロー設計、FastAPI実装、回答形式の整理、README作成を担当しました。AIツールは、プロンプト改善、要約表現の比較、日報生成の出力形式整理、想定質問の洗い出しに活用しました。
+
+As a solo project, I designed the use case, document-processing flow, FastAPI implementation, answer formatting, and project documentation. I used AI tools for prompt iteration, comparison of summarization styles, formatting of daily report outputs, and generation of likely user questions.
+
+プロセスと意図 / Process and Intent
+
+最初に「検索できるだけでなく、引用付きで答えられること」を要件として置きました。AI時代の社内ナレッジ活用では、回答の速さだけでなく、根拠の見える化が重要だと考えたためです。そのため、単なる要約ではなく、参照元を示す構成を優先しました。短時間で試作しつつ、回答品質を観察し、改善しやすい構成にしました。
+
+I defined the core requirement as not only “searchable,” but also “able to answer with citations.” In internal AI knowledge workflows, speed alone is not enough; traceability of evidence matters. For that reason, I prioritized source-grounded answers over pure summarization. The prototype was built quickly, but structured so that answer quality could be observed and iteratively improved.
+
+学び・改善点 / Learning and Improvements
+
+学んだのは、AIの回答品質はプロンプトだけでなく、入力文書の構造や検索設計にも大きく左右されることです。今後は、評価指標の明確化、回答精度の継続検証、ユーザーごとの権限制御まで発展させたいです。
+
+I learned that AI answer quality depends not only on prompting, but also heavily on document structure and retrieval design. Going forward, I would improve explicit evaluation metrics, continuous answer quality checks, and user-level access control.
 ---
 
 ### 3. [Internal-Ops-Ticket-Hub]
@@ -230,10 +264,10 @@ I try to keep technical documentation and project descriptions readable in both 
 
 ## Note / 補足
 
-日本語  
-まだ学習中の領域も多いですが、その分、わからないことをそのままにせず、調べ、試し、比較し、形にすることを大切にしています。  
-これからも、好奇心と謙虚さを持って、実務に近い形の開発経験を積み重ねていきたいと考えています。
+AI活用に関する考え方 / How I Think About AI in Projects
 
-English  
-There is still a lot for me to learn, but that is exactly why I try to investigate, experiment, compare approaches, and turn ideas into practical results.  
-I hope to continue building real-world development experience with curiosity, consistency, and humility.
+
+私は、AIの価値は「ただ早く作ること」ではなく、短時間で仮説を形にし、すぐに検証し、必要に応じて改善を繰り返せることにあると考えています。AIを使うことで、要件整理、実装補助、ドキュメント作成、テスト作成、比較検討の初速を高められます。一方で、AIを使うほど検証の仕組みは重要になります。OpenAIは、実運用のAIアプリには「中核ロジック」に加えて、品質・安全性・信頼性を測るevalsが重要だとしています。Anthropicも、まず難しい課題を素早く反復し、その後テスト範囲を広げること、さらにビルド・テスト・lint による自己検証ループが有効だと述べています。GitHubも、AIコーディング支援は開発者の生産性向上や反復作業の削減に役立つと報告しています。私は、AIを「代わりに作るもの」ではなく、仮説生成と実装速度を高めつつ、人間が検証責任を持つための増幅器として使いたいと考えています。  ￼
+
+
+I see the value of AI not as “just building faster,” but as turning hypotheses into working artifacts quickly, validating them early, and improving them continuously. AI is useful for accelerating requirements exploration, implementation support, documentation, test drafting, and rapid comparison of options. At the same time, the more AI is used, the more important verification becomes. OpenAI emphasizes that production-ready AI applications need not only core logic, but also evaluations (evals) to measure quality, safety, and reliability. Anthropic similarly recommends iterating quickly on hard tasks first, then expanding test coverage, and creating self-verifying loops through builds, tests, and linting. GitHub has also reported productivity gains and reduced repetitive effort with AI coding assistance. My view is that AI should not replace engineering judgment; it should serve as an accelerator for hypothesis generation and implementation, while humans remain responsible for validation and quality.
