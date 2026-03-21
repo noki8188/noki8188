@@ -3,6 +3,15 @@
 修士課程で研究を行いながら、業務システム開発・データ活用・クラウド実装を継続的に学んでいます。  
 I’m a master’s student who enjoys building business systems, data-driven applications, and cloud-based solutions while continuously learning through hands-on projects.
 
+<p align="left">
+  <img src="./assets/aws-ccp.png" alt="AWS Certified Cloud Practitioner" height="105" />
+  <img src="./assets/aws-saa.png" alt="AWS Certified Solutions Architect Associate" height="105" />
+  <img src="./assets/aws-genai-pro.png" alt="AWS Certified Generative AI Developer Professional" height="105" />
+  <img src="./assets/aws-genai-pro-early-adopter.png" alt="AWS Certified Generative AI Developer Professional Early Adopter" height="105" />
+</p>
+
+**AWS Certified:** Cloud Practitioner, Solutions Architect – Associate, Generative AI Developer – Professional  
+**Recognition:** Generative AI Developer – Professional Early Adopter
 ---
 
 ## About Me / 自己紹介
