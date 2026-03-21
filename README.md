@@ -10,9 +10,10 @@ I’m a master’s student who enjoys building business systems, data-driven app
   <img src="./aws-genai-pro-early-adopter.png" alt="AWS Certified Generative AI Developer Professional Early Adopter" height="105" />
 </p>
 
-**AWS Certified:** Cloud Practitioner；
-                   Solutions Architect – Associate；
-                   Generative AI Developer – Professional  
+**AWS Certified:** 
+Cloud Practitioner；
+Solutions Architect – Associate；
+Generative AI Developer – Professional  
 **Recognition:** Generative AI Developer – Professional Early Adopter
 ---
 
