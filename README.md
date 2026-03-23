@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="./hero-banner-ai-workflow.png"
+    alt="Zixuan Wu / 呉 梓軒 | Designing AI workflows for business systems | Backend / AWS / Traceability / Data"
+    width="100%"
+  />
+</p>
+
 # Hi, I'm Zixuan Wu / 呉 梓軒
 
 修士課程で研究を行いながら、業務システム開発・データ活用・クラウド実装を継続的に学んでいます。  
