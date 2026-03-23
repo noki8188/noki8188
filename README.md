@@ -17,7 +17,7 @@ I’m a master’s student who enjoys building business systems, data-driven app
 ![AWS Solutions Architect Associate](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![AWS Generative AI Developer Professional](https://img.shields.io/badge/AWS-Generative%20AI%20Developer%20Professional-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![AWS Early Adopter](https://img.shields.io/badge/AWS-GenAI%20Developer%20Professional%20Early%20Adopter-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![G検定](https://img.shields.io/badge/G検定%2０Adopter-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![JDLA G Certification](https://img.shields.io/badge/JDLA-G%20Certification-1E3A8A?style=for-the-badge&logo=google-scholar&logoColor=white)
 ## About Me / 自己紹介
 
 日本語  
