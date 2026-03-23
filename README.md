@@ -112,7 +112,61 @@ My goal is not only to make something that works, but also to make clear:
 
 ## Featured Projects / 代表プロジェクト
 
-### 1. [ec-inventory-management-system]
+### 1. [社内申請ナビゲーター / Internal-Application-Navigator]
+
+**Agent Workflow PoC for Internal Application Support**  
+日本企業の社内申請相談を題材にした、公開デモ向けの agent workflow PoC です。  
+expense / purchase / business_trip の 3 類型を対象に、分類・補問・規程参照・草稿生成・レビュー・trace 可視化までを一連の流れとして設計しました。  
+単発チャットではなく、役割分担された workflow として業務支援を表現した点が特徴です。
+
+- FastAPI-based backend orchestration
+- Next.js demo frontend
+- Rule-based + LLM-switchable workflow design
+- OpenAI Responses API + Structured Outputs
+- Agent-level fallback and auditable trace output
+- Lightweight evals and smoke-test based hardening
+
+**STAR（Situation / Task / Action / Result）**
+
+**Situation**  
+日本企業の社内申請では、規程や申請ルールが複数箇所に分散し、申請者が「何を出せばよいか」「誰に確認すべきか」を判断しづらいことがあります。  
+A single chatbot response often becomes too monolithic for this kind of workflow, where classification, clarification, policy retrieval, draft generation, and compliance review should be handled step by step.
+
+**Task**  
+この課題に対して、私は「1 回の自然言語回答を返すだけのチャットボット」ではなく、役割分担された agent workflow として社内申請支援を表現する PoC を設計・実装しました。  
+My goal was to build a public-facing prototype that could demonstrate explainability, modularity, and operational reliability rather than full automation only.
+
+**Action**  
+個人開発として、ユースケース設計、workflow 分割、FastAPI 実装、knowledge/ ベースのルール参照、Next.js デモ UI、README / docs 整理まで一貫して担当しました。  
+特に以下を意識しました。
+
+- Intake / Policy Retrieval / Clarification / Draft / Review / Logging に責務を分割
+- expense / purchase / business_trip の 3 類型を固定シナリオとして整理
+- knowledge/ 配下の Markdown を一次ソースとして参照
+- rule-based backend を維持しつつ、v0.3.1 で OpenAI Responses API + Structured Outputs を用いた LLM backend を hardening
+- schema validation に失敗した場合でも、agent 単位で rule-based fallback し、理由を trace に残す設計
+- workflow regression を早期検知するため、代表 3 シナリオに対する簡易 eval を追加
+
+As a result, the project was not only an AI demo, but also a small system-design exercise focused on separation of concerns, traceability, and safer LLM integration.
+
+**Result**  
+この PoC によって、単発チャットよりも agent workflow の方が、業務支援における説明責任と差し替え容易性を持たせやすいことを示せました。  
+The project can now demonstrate:
+
+- case classification from natural-language input
+- missing-information clarification
+- rule and template retrieval
+- draft generation with approval-route candidates
+- compliance review points
+- timeline-based trace output for auditability
+
+v0.3.1 ではさらに、LLM backend の Structured Outputs / schema validation / rule-based fallback / smoke test を追加し、壊れた出力時にも workflow 全体を止めにくい構成へ改善しました。
+
+**Learning and Improvements**  
+このプロジェクトを通じて学んだのは、AI 機能を入れるほど「柔軟な生成」だけでなく、「壊れた時にどう戻すか」「なぜその結果になったかをどう残すか」が重要になることです。  
+My next steps would be stronger retrieval/RAG grounding, richer approval-rule integration, external system connectivity, and more systematic evaluation for long-running operational use.
+
+### 2. [ec-inventory-management-system]
 **Small-scale EC Inventory Management System**  
 React, Express, Prisma, MySQL, Docker, Swagger, Playwright を用いて構築したフルスタック作品です。  
 ユーザー向け購買導線と、管理者向けの商品・在庫・注文管理を一体化し、認証・権限制御・在庫整合性・API 設計・自動検証までを一通り整理しました。
@@ -142,7 +196,7 @@ I started by defining the core concerns: stock consistency, role-based access co
 My main learning was that the more AI accelerates implementation, the more important it becomes to think about failure modes and validation early. As next steps, I would strengthen concurrent inventory edge-case testing, audit logging, and operational monitoring for abnormal events.
 ---
 
-### 2. [team-knowledge-copilot-v1]
+### 3. [team-knowledge-copilot-v1]
 **Internal Knowledge Assistant Prototype**  
 FastAPI ベースの社内向けナレッジアシスタントです。  
 ドキュメント取り込み、引用付き Q&A、AI 日報生成などを通じて、業務知識の検索性と共有効率を高めることを目指しました。
@@ -172,7 +226,7 @@ I defined the core requirement as not only “searchable,” but also “able to
 I learned that AI answer quality depends not only on prompting, but also heavily on document structure and retrieval design. Going forward, I would improve explicit evaluation metrics, continuous answer quality checks, and user-level access control.
 ---
 
-### 3. [Internal-Ops-Ticket-Hub]
+### 4. [Internal-Ops-Ticket-Hub]
 **Internal Operations Ticket Platform on AWS**  
 社内運用向けのチケット管理システムで、AWS 上での構成を意識して設計したプロジェクトです。  
 アプリケーションの機能だけでなく、ALB・ECS Fargate・RDS・CloudWatch・IAM Role・Terraform による構成管理まで含めて、運用を見据えた形でまとめています。
@@ -186,7 +240,7 @@ I learned that AI answer quality depends not only on prompting, but also heavily
 
 ---
 
-### 4. [MetaERP]
+### 5. [MetaERP]
 **Salesforce-inspired ERP Product Prototype**  
 Salesforce のような「オブジェクト駆動・メタデータ駆動」の考え方を意識した ERP プロトタイプです。  
 単なる CRUD ではなく、業務オブジェクト、画面構成、承認ワークフロー、運用管理の観点を意識して設計しています。
@@ -198,7 +252,7 @@ Salesforce のような「オブジェクト駆動・メタデータ駆動」の
 
 ---
 
-### 5. [Ecommerce-Sales-Inventory-Analytics-Portfolio]
+### 6. [Ecommerce-Sales-Inventory-Analytics-Portfolio]
 **BI / Analytics Portfolio for Ecommerce Operations**  
 EC の売上分析・在庫健全性・仕入先パフォーマンス・欠品リスク分析を題材にしたデータ分析作品です。  
 SQL、Python、指標設計、レポーティングの観点を整理し、データから業務改善提案につなげることを意識しています。
