@@ -182,6 +182,32 @@ v0.3.1 ではさらに、LLM backend の Structured Outputs / schema validation 
 **Learning and Improvements**  
 このプロジェクトを通じて学んだのは、AI 機能を入れるほど「柔軟な生成」だけでなく、「壊れた時にどう戻すか」「なぜその結果になったかをどう残すか」が重要になることです。  
 My next steps would be stronger retrieval/RAG grounding, richer approval-rule integration, external system connectivity, and more systematic evaluation for long-running operational use.
+## アーキテクチャ図
+
+```mermaid
+flowchart LR
+    U["Employee"] --> F["Next.js Demo UI"]
+    F --> API["FastAPI /api/chat/demo"]
+    API --> ORCH["Workflow Orchestrator"]
+    ORCH --> CC["CaseClassifier"]
+    ORCH --> MA["MessageAnalyzer"]
+    ORCH --> CA["ClarificationAgent"]
+    ORCH --> DA["DraftAgent"]
+    ORCH --> RA["ReviewAgent"]
+    ORCH --> TB["TraceBuilder"]
+    CC --> RB["Rule-based impl"]
+    MA --> RB
+    CA --> RB
+    DA --> RB
+    RA --> RB
+    TB --> RB
+    CC -. env switch .-> LLM["OpenAI Responses API impl (v0.3.1)"]
+    CA -. env switch .-> LLM
+    DA -. env switch .-> LLM
+    LLM -. fallback .-> RB
+    ORCH --> KB["KnowledgeBase"]
+    KB --> K["knowledge/*.md"]
+```
 
 ### 2. [ec-inventory-management-system]
 
