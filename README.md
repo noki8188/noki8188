@@ -8,7 +8,7 @@ I’m a master’s student who enjoys building business systems, data-driven app
   <img src="./aws-saa.png" alt="AWS Certified Solutions Architect Associate" height="105" />
   <img src="./aws-genai-pro.png" alt="AWS Certified Generative AI Developer Professional" height="105" />
   <img src="./aws-genai-pro-early-adopter.png" alt="AWS Certified Generative AI Developer Professional Early Adopter" height="105" />
-  <img src="./G" alt="Gkennte" height="105" />
+  <img src="./G.png" alt="Gkennte" height="105" />
 </p>
 
 **AWS Certified:** 
