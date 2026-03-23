@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./hero-banner-ai-workflow.png"
+    src="hero-banner-ai-workflow.png"
     alt="Zixuan Wu / 呉 梓軒 | Designing AI workflows for business systems | Backend / AWS / Traceability / Data"
     width="100%"
   />
