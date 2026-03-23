@@ -11,12 +11,12 @@ I’m a master’s student who enjoys building business systems, data-driven app
   <img src="./G.png" alt="Gkennte" height="105" />
 </p>
 
-**AWS Certified:** 
-Cloud Practitioner；
-Solutions Architect – Associate；
-Generative AI Developer – Professional  
-**Recognition:** Generative AI Developer – Professional Early Adopter
----
+## Certifications
+
+![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![AWS Solutions Architect Associate](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![AWS Generative AI Developer Professional](https://img.shields.io/badge/AWS-Generative%20AI%20Developer%20Professional-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![AWS Early Adopter](https://img.shields.io/badge/AWS-GenAI%20Developer%20Professional%20Early%20Adopter-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ## About Me / 自己紹介
 
