@@ -72,8 +72,10 @@ My goal is not only to make something that works, but also to make clear:
 - and how it can be improved further.
 
 ---
+## Tech Stack / 技術スタック
+
 <details>
- # <summary><strong> View Tech Stack / 技術スタックを見る</strong></summary>
+ # <summary><strong> Click to expand / クリックして展開</strong></summary>
 
   <br>
 
