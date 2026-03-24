@@ -129,7 +129,7 @@ My goal is not only to make something that works, but also to make clear:
 
 ## Featured Projects / 代表プロジェクト
 
-### 1. [社内申請ナビゲーター / Internal-Application-Navigator]
+### 1. [社内申請ナビゲーター / Internal-Application-Navigator](https://github.com/noki8188/shinsei-agent-navigator)
 
 **Agent Workflow PoC for Internal Application Support**  
 日本企業の社内申請相談を題材にした、公開デモ向けの agent workflow PoC です。  
@@ -209,7 +209,7 @@ flowchart LR
     KB --> K["knowledge/*.md"]
 ```
 
-### 2. [ec-inventory-management-system]
+### 2. [ec-inventory-management-system](https://github.com/noki8188/ec-inventory-management-system)
 
 **Small-scale EC Inventory Management System**  
 React, Express, Prisma, MySQL, Docker, Swagger, Playwright を用いて構築したフルスタック作品です。  
@@ -237,7 +237,7 @@ I started by defining the core concerns: stock consistency, role-based access co
 My main learning was that the more AI accelerates implementation, the more important it becomes to think about failure modes and validation early. As next steps, I would strengthen concurrent inventory edge-case testing, audit logging, and operational monitoring for abnormal events.
  <img src="./05-admin-orders.png" alt="sample05" />
 
-### 3. [team-knowledge-copilot-v1]
+### 3. [team-knowledge-copilot-v1](https://github.com/noki8188/team-knowledge-copilot-v1)
 
 **Internal Knowledge Assistant Prototype**  
 FastAPI ベースの社内向けナレッジアシスタントです。  
@@ -264,7 +264,7 @@ I defined the core requirement as not only “searchable,” but also “able to
 
 I learned that AI answer quality depends not only on prompting, but also heavily on document structure and retrieval design. Going forward, I would improve explicit evaluation metrics, continuous answer quality checks, and user-level access control.
 
-### 4. [Internal-Ops-Ticket-Hub]
+### 4. [Internal-Ops-Ticket-Hub](https://github.com/noki8188/Internal-Ops-Ticket-Hub)
 
 **Internal Operations Ticket Platform on AWS**  
 社内運用向けのチケット管理システムで、AWS 上での構成を意識して設計したプロジェクトです。  
@@ -277,7 +277,7 @@ I learned that AI answer quality depends not only on prompting, but also heavily
 - IAM role design
 - Terraform-based infrastructure definition
 
-### 5. [MetaERP]
+### 5. [MetaERP](https://github.com/noki8188/MetaERP)
 
 **Salesforce-inspired ERP Product Prototype**  
 Salesforce のような「オブジェクト駆動・メタデータ駆動」の考え方を意識した ERP プロトタイプです。  
@@ -288,7 +288,7 @@ Salesforce のような「オブジェクト駆動・メタデータ駆動」の
 - Approval-based procurement workflow
 - Enterprise-style admin product prototype
 
-### 6. [Ecommerce-Sales-Inventory-Analytics-Portfolio]
+### 6. [Ecommerce-Sales-Inventory-Analytics-Portfolio](https://github.com/noki8188/Ecommerce-Sales-Inventory-Analytics-Portfolio)
 
 **BI / Analytics Portfolio for Ecommerce Operations**  
 EC の売上分析・在庫健全性・仕入先パフォーマンス・欠品リスク分析を題材にしたデータ分析作品です。  
