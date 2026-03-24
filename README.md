@@ -73,57 +73,50 @@ My goal is not only to make something that works, but also to make clear:
 
 ---
 
-## Technical Interests / 技術的な関心
+#<details>
+  <summary><strong>Tech Stack / 技術スタック（クリックして展開）</strong></summary>
 
-- Full-stack web development
-- Backend/API design
-- Business systems and internal tools
-- AI-assisted workflow automation
-- Cloud architecture on AWS
-- Data analysis / BI / analytics workflows
-- Test automation and validation
+  <br>
 
----
+  ### Application Development
 
-## Tech Stack / 技術スタック
+  - React
+  - TypeScript
+  - Vite
+  - Node.js
+  - Express
+  - FastAPI
+  - Prisma
 
-### Application Development
+  ### Database / Data
 
-- React
-- TypeScript
-- Vite
-- Node.js
-- Express
-- FastAPI
-- Prisma
+  - MySQL
+  - PostgreSQL
+  - SQL
+  - Python
+  - BI / analytics-oriented data modeling
 
-### Database / Data
+  ### Cloud / Infrastructure
 
-- MySQL
-- PostgreSQL
-- SQL
-- Python
-- BI / analytics-oriented data modeling
+  - Docker
+  - Docker Compose
+  - AWS
+    - ECS Fargate
+    - ALB
+    - RDS
+    - CloudWatch
+    - IAM
+  - Terraform
 
-### Cloud / Infrastructure
+  ### Testing / Quality
 
-- Docker
-- Docker Compose
-- AWS
-  - ECS Fargate
-  - ALB
-  - RDS
-  - CloudWatch
-  - IAM
-- Terraform
+  - Jest
+  - Vitest
+  - Playwright
+  - Swagger / API documentation
+  - CI workflows
 
-### Testing / Quality
-
-- Jest
-- Vitest
-- Playwright
-- Swagger / API documentation
-- CI workflows
+</details>
 
 ---
 
