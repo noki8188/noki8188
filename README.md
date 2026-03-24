@@ -73,7 +73,7 @@ My goal is not only to make something that works, but also to make clear:
 
 ---
 <details>
-  <summary><strong>▶ View Tech Stack / 技術スタックを見る</strong></summary>
+  <summary><strong> ##View Tech Stack / 技術スタックを見る</strong></summary>
 
   <br>
 
