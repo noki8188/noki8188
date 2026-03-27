@@ -48,28 +48,34 @@ I still have a lot to learn, but I enjoy staying curious, working hands-on, and 
 **日本語**  
 すべての個人開発・作品づくりにおいて、以下の流れを意識しています。
 
-**要件定義 → 基本設計 → 詳細設計 → 開発 → テスト（UT／IT／ST） → リリース → 運用保守**
+**要件定義 → PoC / 実現性検証 → 基本設計 → 詳細設計 → 開発 → テスト（UT／IT／ST） → リリース → 運用保守**
 
 単に「動くもの」を作るだけでなく、
 
 - 何を解決するのか
+- まず小さく検証すべき論点は何か
 - どのような設計判断をしたのか
 - どのように検証したのか
 - 今後どう改善できるのか
 
 まで含めて整理し、GitHub 上でも読み手に伝わる形にすることを心がけています。
 
+特に、要件をそのまま大きく実装するのではなく、まず PoC で実現性やリスクを確認し、その結果を踏まえて設計・実装に進むことを大切にしています。
+
 **English**  
 Across all of my projects, I try to follow the full lifecycle:
 
-**Requirements Definition → High-Level Design → Detailed Design → Development → Testing (UT / IT / ST) → Release → Operation & Maintenance**
+**Requirements Definition → PoC / Feasibility Validation → High-Level Design → Detailed Design → Development → Testing (UT / IT / ST) → Release → Operation & Maintenance**
 
 My goal is not only to make something that works, but also to make clear:
 
 - what problem it solves,
+- what should be validated early in a small-scale PoC,
 - what design decisions were made,
 - how it was validated,
 - and how it can be improved further.
+
+Rather than implementing everything at full scale from the beginning, I value using small PoCs to confirm feasibility, identify risks, and refine the design before moving into full development.
 
 ---
 ## Tech Stack / 技術スタック
