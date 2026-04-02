@@ -79,6 +79,39 @@ My goal is not only to make something that works, but also to make clear:
 Rather than implementing everything at full scale from the beginning, I value using small PoCs to confirm feasibility, identify risks, and refine the design before moving into full development.
 
 ---
+
+## CLI / Terminal Setup / 開発環境
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Terminal-Ghostty-7D56F4?style=for-the-badge" alt="Ghostty" />
+  <img src="https://img.shields.io/badge/Prompt-Starship-111827?style=for-the-badge" alt="Starship" />
+  <img src="https://img.shields.io/badge/Shell-fish-4B9CD3?style=for-the-badge" alt="fish shell" />
+</p>
+
+**日本語**  
+日常的な開発環境として、**Ghostty + Starship + fish** を使用しています。  
+見やすさだけでなく、軽快な操作性と、コマンドライン上での作業のしやすさを重視して構成しています。  
+個人開発や検証では、CLI 上でプロジェクトの起動、ログ確認、Git 操作、スクリプト実行を行うことが多く、  
+できるだけシンプルで集中しやすい環境を意識しています。
+
+**English**  
+My current daily terminal setup is **Ghostty + Starship + fish**.  
+I value not only aesthetics, but also speed, clarity, and a comfortable command-line workflow.  
+For personal projects and validation work, I often rely on the CLI for project startup, log checking, Git operations, and script execution,  
+so I prefer a setup that stays minimal, fast, and focused.
+
+<p align="center">
+  <img src="./images/ghostty-terminal-split.png" alt="Ghostty terminal setup with split panes" width="100%" />
+</p>
+
+**Example workflow**
+- Left pane: agent / coding assistant workflow (e.g. Claude Code)
+- Right pane: logs, Git status, test output, or project information
+- Focus: fast iteration, readable output, and practical day-to-day development flow
+
+---
+
+
 ## Tech Stack / 技術スタック
 
 <details>
