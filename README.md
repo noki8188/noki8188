@@ -101,7 +101,7 @@ For personal projects and validation work, I often rely on the CLI for project s
 so I prefer a setup that stays minimal, fast, and focused.
 
 <p align="center">
-  <img src="./images/ghostty-terminal-split.png" alt="Ghostty terminal setup with split panes" width="100%" />
+  <img src="./ghostty-terminal-split.png" alt="Ghostty terminal setup with split panes" width="100%" />
 </p>
 
 **Example workflow**
