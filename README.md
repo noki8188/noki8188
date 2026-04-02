@@ -269,7 +269,7 @@ I started by defining the core concerns: stock consistency, role-based access co
 学んだのは、AIを使うほど「作る速さ」と同時に「壊れ方を先に考える視点」が重要になることです。今後は、在庫競合のケースをさらに増やしたテスト、監査ログ、運用時の異常検知などを強化したいです。
 
 My main learning was that the more AI accelerates implementation, the more important it becomes to think about failure modes and validation early. As next steps, I would strengthen concurrent inventory edge-case testing, audit logging, and operational monitoring for abnormal events.
- <img src="./05-admin-orders.png" alt="sample05" />
+ <img src="./06-admin-orders.png" alt="sample05" />
 
 ### 3. [team-knowledge-copilot-v1](https://github.com/noki8188/team-knowledge-copilot-v1)
 
