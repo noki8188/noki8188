@@ -41,6 +41,7 @@ I value understanding business flow and user needs first, then building systems 
 Rather than relying on one technology only, I try to choose tools and architectures based on purpose, learn them quickly, compare approaches, and improve iteratively.  
 I still have a lot to learn, but I enjoy staying curious, working hands-on, and building practical portfolio projects with humility and discipline.
 
+
 ---
 
 ## Working Style / 開発姿勢
