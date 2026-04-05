@@ -19,6 +19,7 @@ I’m a master’s student who enjoys building business systems, data-driven app
   <img src="./G.png" alt="Gkennte" height="105" />
 </p>
 
+
 ## Certifications
 
 ![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
